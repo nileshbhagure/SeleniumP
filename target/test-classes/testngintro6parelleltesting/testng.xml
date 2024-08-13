@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite thread-count="5" name="Suite" parallel="tests">
+  
+  <!--browser is variable & value of variable is chrome-->
+  
+  <test  name="chrometest">
+     <parameter name="browser" value="chrome"></parameter>
+     <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"></parameter>
+    <classes>
+      <class name="testngintro6parelleltesting.ParamTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+    <test  name="edgetest">
+     <parameter name="browser" value="edge"></parameter>
+     <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"></parameter>
+    <classes>
+      <class name="testngintro6parelleltesting.ParamTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+    <test name="firefoxtest">
+     <parameter name="browser" value="firefox"></parameter>
+     <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"></parameter>
+   <classes>
+      <class name="testngintro6parelleltesting.ParamTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
